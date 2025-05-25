@@ -27,4 +27,4 @@ money_made = pickles_produced * pickle_price
 
 st.header(f"You made {int(money_made)}$")
 
-st.title(f"In total you profited {int(money_made - money_spent_on_bones)}")
+st.title(f"In total you profited {int(money_made - money_spent_on_bones)}$")
