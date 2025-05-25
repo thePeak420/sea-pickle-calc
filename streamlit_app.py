@@ -24,4 +24,5 @@ pickle_price = st.number_input(
     "Insert the money gained per pickle", min_value=None, value=0.0, placeholder="Type a number..."
 )
 money_made = pickles_produced * pickle_price
-st.write("You made ", money_made, "$")
+
+st.header(f"You made {int(money_made)}$")
