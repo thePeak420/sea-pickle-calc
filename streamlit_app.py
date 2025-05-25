@@ -15,7 +15,7 @@ money_spent_on_bones = bone_count * bone_price
 st.header(f"You spent {int(money_spent_on_bones)}$ on bones")
 
 shulkers_of_pickles_produced = st.number_input(
-    "Insert how many shulkers of sea pickles the farm produced", min_value=None, value=0, placeholder="Type a number..."
+    "Insert how many shulkers of sea pickles the farm produced (if its 20736 bones, it will be 164)", min_value=None, value=0, placeholder="Type a number..."
 )
 pickles_produced = shulkers_of_pickles_produced * 27 * 64
 st.write("The farm produced ", pickles_produced, " sea pickles")
