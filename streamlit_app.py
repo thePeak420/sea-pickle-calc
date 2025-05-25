@@ -17,4 +17,11 @@ st.header(f"You spent {int(money_spent_on_bones)} on the bones")
 shulkers_of_pickles_produced = st.number_input(
     "Insert how many shulkers of sea pickles the farm produced", min_value=None, value=0, placeholder="Type a number..."
 )
-st.write("The farm produced ", shulkers_of_pickles_produced * 27 * 64, " sea pickles")
+pickles_produced = shulkers_of_pickles_produced * 27 * 64
+st.write("The farm produced ", pickles_produced, " sea pickles")
+
+pickle_price = st.number_input(
+    "Insert the money gained per pickle", min_value=None, value=0.0, placeholder="Type a number..."
+)
+money_made = pickles_produced * pickle_price
+st.write("You made ", money_made, "$")
